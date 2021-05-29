@@ -20,17 +20,17 @@
     <main>
         <div class="container-fluid">
             <div class="row justify-content-end">
-                <div class="col-1 text-right bg-lig pr-3 d-none" id="weather" role="button"
+                <div class="col-1 text-right bg-lig pr-3 d-none" id="weather" title="Click here to change temperature degree type" role="button"
                     onclick="app.weatherController.change()"></div>
             </div>
             <div class="row mt-5 flex-column">
                 <div class="col-lg-3 m-auto display-1 text-center bg-lig" id="clock"></div>
                 <h4 class="col-lg-3 m-auto text-center bg-lig py-2 words" id="date"></h4>
+                <div class="col-lg-2 m-auto pt-2">
+                    <h3 id="welcome" role="button" title="Click here to change User" onclick="app.userController.changeUser()" class="text-center p-3 d-none inspire bg-lig rounded-pill">WELCOME DEREK</h3>
+                </div>
             </div>
             <div class="row mt-5">
-                <div class="col-lg-4 m-auto">
-                    <h1 id="welcome" role="button" onclick="app.userController.changeUser()" class="text-center p-5 d-none inspire bg-lig rounded-pill">WELCOME DEREK</h1>
-                </div>
             </div>
             <div class="container-fluid" id="start">
                 <div class="bg-lig">
@@ -42,7 +42,7 @@
                     <div class="row mt-5">
                         <div class="col-lg-4 m-auto">
                             <h5 class="text-center pt-2 words">Inspire is your home for inspiring quotes, relaxing and
-                                beautiful images, and to plan out your day!</h5>
+                                beautiful images, and to structure your day!</h5>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -71,7 +71,7 @@
                     </div>
                     <form onsubmit="app.tasksController.addTask(event)">
                         <label for="description" class="sr-only">Task Description</label>
-                        <input required type="text" name="description"
+                        <input required type="text" maxlength="30" name="description"
                             class="mb-2 border-top-0 border-left-0 border-right-0 bg-transparent text-light"
                             placeholder="Task">
                         <button class="btn btn-success mdi mdi-check" type="submit"></button>
