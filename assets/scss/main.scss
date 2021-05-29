@@ -1,0 +1,46 @@
+@import "./_variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./_overrides.scss";
+@import "./custom.scss";
+@import "./loaders.scss";
+
+*{
+  user-select: none;
+}
+
+.words{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.inspire{
+  font-family: 'Lobster', cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $body-bg;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.author{
+  color: transparent;
+  transition: all .2s linear;
+}
+
+.author:hover{
+  color: black;
+}
+
+.bg-lig{
+background-color: rgba(252, 252, 252, 0.6);
+}
+
+
+
+
+
