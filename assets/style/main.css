@@ -10720,4 +10720,9 @@ main {
   background-color: rgba(252, 252, 252, 0.6);
 }
 
+.image {
+  background-image: url(https://i.pinimg.com/originals/37/4c/89/374c89251429e42d42428f3c99df5c56.jpg);
+  background-size: cover;
+}
+
 /*# sourceMappingURL=main.css.map */
