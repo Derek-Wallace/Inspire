@@ -7,12 +7,13 @@ function _draw(){
 }
 export class ImageController{
   constructor(){
-    ProxyState.on('image', _draw)
-    this.getImage()
+    // ProxyState.on('image', _draw)
+    // this.getImage()
+    _draw()
   }
   
   
-  getImage(){
-    sandboxApiService.getImage()
-  }
+  // getImage(){
+  //   sandboxApiService.getImage()
+  // }
 }
