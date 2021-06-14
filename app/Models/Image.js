@@ -1,5 +1,5 @@
-export class Image{
-  constructor(data){
-    this.url = data.url
-  }
-}
+// export class Image{
+//   constructor(data){
+//     this.url = data.url
+//   }
+// }
