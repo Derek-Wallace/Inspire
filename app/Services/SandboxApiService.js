@@ -26,8 +26,8 @@ class SandboxApiService {
   }
 
   async getImage() {
-    let res = await sandbox.get('images')
-    ProxyState.image = new Image(res.data)
+    // let res = await sandbox.get('images')
+    // ProxyState.image = new Image(res.data)
   }
 
   async getTasks() {
